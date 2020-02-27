@@ -170,23 +170,23 @@
         <div class="container">
 
             <div class="row">
-                <div id="map" style="width:500px;height:400px;vertical-align: middle;"></div>
+                <div id="map" style="width:100%;height:400px;vertical-align: middle;"></div>
                 <script>
                     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                         mapOption = { 
-                            center: new kakao.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+                            center: new kakao.maps.LatLng(37.5118096, 126.9943744), // 지도의 중심좌표
                             level: 4 // 지도의 확대 레벨
                         };
                     
                     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
                     
-                    var imageSrc = 'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png', // 마커이미지의 주소입니다    
+                    var imageSrc = 'https://duhui-s2-seula.github.io/img/portfolio/wedding.svg', // 마커이미지의 주소입니다    
                         imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
                         imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
                         
                     // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
                     var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                        markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+                        markerPosition = new kakao.maps.LatLng(37.5118096, 126.9943744); // 마커가 표시될 위치입니다
                     
                     // 마커를 생성합니다
                     var marker = new kakao.maps.Marker({
@@ -225,42 +225,43 @@
     <section id="contact">
         <div class="container">
 
-            <a id="kakao-link-btn" style="vertical-align: middle;" href="javascript:;">
-                <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-            </a>
+            <div class="row">
+                <a id="kakao-link-btn" style="vertical-align: middle;" href="javascript:;">
+                    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+                </a>
 
-            <script type='text/javascript'>
-                //<![CDATA[
-                // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-                Kakao.init('3a1a76bca71b05bc7544d7e6ab7cd6bf');
-                // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-                Kakao.Link.createDefaultButton({
-                    container: '#kakao-link-btn',
-                    objectType: 'location',
-                    address: '서울 서초구 올림픽대로 683 세빛둥둥섬 플로팅아일랜드',
-                    addressTitle: '세빛섬 플로팅 아일랜드',
-                    content: {
-                    title: '슬아 ♥︎ 두희 결혼합니다.',
-                    description: '2020년 9월 26일 세빛섬 플로팅 아일랜드',
-                    imageUrl: 'https://duhui-s2-seula.github.io/img/portfolio/3.JPG',
-                    link: {
-                        mobileWebUrl: 'https://duhui-s2-seula.github.io',
-                        webUrl: 'https://duhui-s2-seula.github.io'
-                    }
-                    },
-                    buttons: [
-                    {
-                        title: '청첩장 보기',
+                <script type='text/javascript'>
+                    //<![CDATA[
+                    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                    Kakao.init('3a1a76bca71b05bc7544d7e6ab7cd6bf');
+                    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                    Kakao.Link.createDefaultButton({
+                        container: '#kakao-link-btn',
+                        objectType: 'location',
+                        address: '세빛섬 플로팅아일랜드',
+                        addressTitle: '세빛섬 플로팅 아일랜드',
+                        content: {
+                        title: '슬아 ♥︎ 두희 결혼합니다.',
+                        description: '2020년 9월 26일 세빛섬 플로팅 아일랜드',
+                        imageUrl: 'https://duhui-s2-seula.github.io/img/portfolio/3.JPG',
                         link: {
-                        mobileWebUrl: 'https://duhui-s2-seula.github.io',
-                        webUrl: 'https://duhui-s2-seula.github.io'
+                            mobileWebUrl: 'https://duhui-s2-seula.github.io',
+                            webUrl: 'https://duhui-s2-seula.github.io'
                         }
-                    }
-                    ]
-                });
-                //]]>
-            </script>
-
+                        },
+                        buttons: [
+                        {
+                            title: '청첩장 보기',
+                            link: {
+                            mobileWebUrl: 'https://duhui-s2-seula.github.io',
+                            webUrl: 'https://duhui-s2-seula.github.io'
+                            }
+                        }
+                        ]
+                    });
+                    //]]>
+                </script>
+            </div>
 
             <div class="row">
                 <div class="col-lg-12 text-center">
