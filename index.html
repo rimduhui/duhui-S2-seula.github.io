@@ -50,7 +50,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">두희 슬아 청첩장</a>
+                <a class="navbar-brand" href="#page-top">두희♡슬아</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -170,7 +170,7 @@
         <div class="container">
 
             <div class="row">
-                <div id="map" style="width:400px;height:400px;vertical-align: middle;"></div>
+                <div id="map" style="max-width: 100%; height: 400px;"></div>
                 <script>
                     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                         mapOption = { 
@@ -226,41 +226,7 @@
         <div class="container">
 
             <div class="row">
-                <a id="kakao-link-btn" style="vertical-align: middle;" href="javascript:;">
-                    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-                </a>
-
-                <script type='text/javascript'>
-                    //<![CDATA[
-                    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-                    Kakao.init('3a1a76bca71b05bc7544d7e6ab7cd6bf');
-                    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-                    Kakao.Link.createDefaultButton({
-                        container: '#kakao-link-btn',
-                        objectType: 'location',
-                        address: '세빛섬 플로팅아일랜드',
-                        addressTitle: '세빛섬 플로팅 아일랜드',
-                        content: {
-                        title: '슬아 ♥︎ 두희 결혼합니다.',
-                        description: '2020년 9월 26일 세빛섬 플로팅 아일랜드',
-                        imageUrl: 'https://duhui-s2-seula.github.io/img/portfolio/3.JPG',
-                        link: {
-                            mobileWebUrl: 'https://duhui-s2-seula.github.io',
-                            webUrl: 'https://duhui-s2-seula.github.io'
-                        }
-                        },
-                        buttons: [
-                        {
-                            title: '청첩장 보기',
-                            link: {
-                            mobileWebUrl: 'https://duhui-s2-seula.github.io',
-                            webUrl: 'https://duhui-s2-seula.github.io'
-                            }
-                        }
-                        ]
-                    });
-                    //]]>
-                </script>
+                
             </div>
 
             <div class="row">
@@ -317,7 +283,7 @@
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
+        <!-- <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
@@ -351,13 +317,45 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
-                    </div>
+                    <a id="kakao-link-btn" href="javascript:;">
+                        <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" style="width: 5%; height: auto;"/>
+                        <h4>카카오톡으로 전송</h4>
+                    </a>
+                    <script type='text/javascript'>
+                        //<![CDATA[
+                        // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                        Kakao.init('3a1a76bca71b05bc7544d7e6ab7cd6bf');
+                        // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+                        Kakao.Link.createDefaultButton({
+                            container: '#kakao-link-btn',
+                            objectType: 'location',
+                            address: '세빛섬 플로팅아일랜드',
+                            addressTitle: '세빛섬 플로팅 아일랜드',
+                            content: {
+                            title: '슬아 ♥︎ 두희 결혼합니다.',
+                            description: '2020년 9월 26일 세빛섬 플로팅 아일랜드',
+                            imageUrl: 'https://duhui-s2-seula.github.io/img/portfolio/3.JPG',
+                            link: {
+                                mobileWebUrl: 'https://duhui-s2-seula.github.io',
+                                webUrl: 'https://duhui-s2-seula.github.io'
+                            }
+                            },
+                            buttons: [
+                            {
+                                title: '청첩장 보기',
+                                link: {
+                                mobileWebUrl: 'https://duhui-s2-seula.github.io',
+                                webUrl: 'https://duhui-s2-seula.github.io'
+                                }
+                            }
+                            ]
+                        });
+                        //]]>
+                    </script>
                 </div>
             </div>
         </div>
